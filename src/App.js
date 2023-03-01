@@ -51,8 +51,8 @@ function App() {
             <p key={idx}>{item}</p>
           ))}
         </WrapperSuggest>
+        <Button type="submit">SEARCH</Button>
       </WrapperInput>
-      <Button type="submit">SEARCH</Button>
 
       <div className="wrapperResult">
         <p>Output : {result.length !== 0 ? result : '-'}</p>
