@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 
-export const WrapperInput = styled.div`
+export const WrapperInput = styled.form`
   width: 50%;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #393053;
   border-radius: 5px;
   margin: 40px 0;
+  position: relative;
+  transition: 1s;
   .icon {
     width: 30px;
     height: 30px;
@@ -28,6 +30,24 @@ export const Input = styled.input`
     outline: none;
   }
   &::placeholder {
-    color: var(--text-color);
+    color: #e3dffd;
+  }
+`;
+
+export const WrapperSuggest = styled.div`
+  position: absolute;
+  top: 49px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #635985;
+  transition: 1s;
+  display: ${({ data }) => (data.length !== 0 ? 'visible' : 'none')};
+  p {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--title-color);
+    font-family: 'Nunito', sans-serif;
   }
 `;
