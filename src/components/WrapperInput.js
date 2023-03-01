@@ -16,6 +16,7 @@ export const WrapperInput = styled.form`
     width: 30px;
     height: 30px;
     transition: 0.3s;
+    color: #e3dffd;
   }
 `;
 
@@ -28,6 +29,7 @@ export const Input = styled.input`
   color: var(--text-color);
   &:focus {
     outline: none;
+    color: #e3dffd;
   }
   &::placeholder {
     color: #e3dffd;
